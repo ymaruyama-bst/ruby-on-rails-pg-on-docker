@@ -1,0 +1,28 @@
+## データ構造
+- Users
+  - id
+  - created_at (timestamps)
+  - updated_at (timestamps)
+  - name string, null: false
+  - login_id string, null: false
+  - password string, null: false
+- Tasks
+  - id
+  - created_at (timestamps)
+  - updated_at (timestamps)
+  - description string, null: false
+  - remark string
+  - end_date datetime
+  - priority_id integer
+  - status_id integer
+  - user_id integer
+- Priorities(Master)
+  - id
+  - created_at (timestamps)
+  - updated_at (timestamps)
+  - name string, null: false
+- Statuses(Master)
+  - id
+  - created_at (timestamps)
+  - updated_at (timestamps)
+  - name string, null: false
