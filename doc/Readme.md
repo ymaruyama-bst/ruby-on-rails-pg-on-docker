@@ -12,10 +12,10 @@
   - updated_at (timestamps)
   - description string, null: false
   - remark string
-  - end_date datetime
-  - priority_id integer
-  - status_id integer
-  - user_id integer
+  - end_datetime datetime
+  - priority_id bigint(references)
+  - status_id bigint(references)
+  - user_id bigint(references)
 - Priorities(Master)
   - id
   - created_at (timestamps)
