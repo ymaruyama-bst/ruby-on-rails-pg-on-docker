@@ -10,8 +10,8 @@
   - id
   - created_at (timestamps)
   - updated_at (timestamps)
-  - description string, null: false
-  - remark string
+  - name string, null: false
+  - description string
   - end_datetime datetime
   - priority_id bigint(references)
   - status_id bigint(references)

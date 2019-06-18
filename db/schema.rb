@@ -28,8 +28,8 @@ ActiveRecord::Schema.define(version: 2019_06_04_123612) do
   end
 
   create_table "tasks", force: :cascade do |t|
-    t.string "description", null: false
-    t.string "remark"
+    t.string "name", null: false
+    t.string "description"
     t.datetime "end_datetime"
     t.bigint "priority_id"
     t.bigint "status_id"
