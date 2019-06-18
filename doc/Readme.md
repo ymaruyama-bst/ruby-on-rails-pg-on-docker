@@ -5,7 +5,7 @@
   - updated_at (timestamps)
   - name string, null: false
   - login_id string, null: false
-  - password string, null: false
+  - password_digest string, null: false
 - Tasks
   - id
   - created_at (timestamps)
