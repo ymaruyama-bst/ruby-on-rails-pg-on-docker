@@ -39,6 +39,7 @@ ActiveRecord::Schema.define(version: 2019_06_04_123612) do
     t.string "name", null: false
     t.string "login_id", null: false
     t.string "password_digest", null: false
+    t.boolean "admin", default: false, null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

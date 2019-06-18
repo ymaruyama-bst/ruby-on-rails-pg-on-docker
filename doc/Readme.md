@@ -6,6 +6,7 @@
   - name string, null: false
   - login_id string, null: false
   - password_digest string, null: false
+  - admin boolean, null: false, defualt: false
 - Tasks
   - id
   - created_at (timestamps)
