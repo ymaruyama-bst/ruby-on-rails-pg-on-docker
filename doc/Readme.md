@@ -1,0 +1,29 @@
+## データ構造
+- Users
+  - id
+  - created_at (timestamps)
+  - updated_at (timestamps)
+  - name string, null: false
+  - login_id string, null: false
+  - password_digest string, null: false
+  - admin boolean, null: false, defualt: false
+- Tasks
+  - id
+  - created_at (timestamps)
+  - updated_at (timestamps)
+  - name string, null: false
+  - description string
+  - end_datetime datetime
+  - priority_id bigint(references)
+  - status_id bigint(references)
+  - user_id bigint(references)
+- Priorities(Master)
+  - id
+  - created_at (timestamps)
+  - updated_at (timestamps)
+  - name string, null: false
+- Statuses(Master)
+  - id
+  - created_at (timestamps)
+  - updated_at (timestamps)
+  - name string, null: false

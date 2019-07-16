@@ -1,0 +1,22 @@
+h1 ToDo Editor
+
+.nav.justify-content-end
+  = link_to 'Back to List', tasks_path, class: 'nav-link'
+
+= form_with model: @task, local: true do |f|
+  .form-group
+    = f.label :name
+    = f.text_field :name, class: 'form-control', id: 'task_name'
+  .form-group
+    = f.label :description
+    = f.text_area :description, rows: 5, class: 'form-control', id: 'task_description'
+  .form-group
+    = f.label :priority
+    = f.select :priority, %i[1 2 3 4 5], {selected: 3}, class: 'form-control'
+  .form-group
+    = f.label :status
+    = f.select :status, %i[未実行 実行中 完了], {selected: '未実行'}, class: 'form-control'
+  .form-group
+    = f.label :user
+    = f.select :user, %i[1 2 3 4 5], {selected: 1}, class: 'form-control'
+  = f.submit nil, class: 'btn btn-primary'
